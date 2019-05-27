@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Light Bulb</title>
+</head>
+<style>
+    button {
+        height: 30px;
+        width: 80px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        background-color: mediumvioletred;
+        color: #ffffff;
+        border: none;
+        cursor: grab;
+    }
+    button:hover {
+        background-color:orangered;
+        box-shadow: 0 3px 3px black;
+        
+    }
+</style>
+<body>
+<center>
+    <button onclick="document.getElementById('image').src='bulbOFF.png'">Light Off</button>
+        <img id="image" src="bulbOFF.png">
+    <button onclick="document.getElementById('image').src='bulbON.png'">Light On</button>
+    <p>Click button to Switch on/off respectively</p>
+</center>
+</body>
+</html>
